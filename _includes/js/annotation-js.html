@@ -1,0 +1,24 @@
+<script>
+(function(){
+
+
+  $(".playline").on("click","div.annobutton", function ( event ) {
+    var annotation = $(this).data("filter");
+    $("div").not("#" + annotation).removeClass("annotate-show");
+    $("div").not("#" + annotation).parent().removeClass("show-mobile-annotation");
+    $("#" + annotation).toggleClass('annotate-show');
+    $("#" + annotation).css('width','90%');
+    $("#" + annotation).parent().toggleClass('show-mobile-annotation');
+    $("span.hilite").not(".hi-" + annotation).removeClass('fw-bold');
+    $(".hi-" + annotation).toggleClass('fw-bold');
+
+  });
+
+  $(".hilite").hover(function () {
+    var hiliteid = $(this).data("filter");
+    $("." + hiliteid).toggleClass('fw-bold');
+  });
+
+})();
+
+</script>

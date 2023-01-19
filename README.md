@@ -1,10 +1,6 @@
-# Digital Dramaturgy Base Repository
+# Measure for Measure Reshaped
 
-This repository uses connected Google Sheets and a Jekyll-based static web generator to publish annotated versions of Shakespeare's plays. It is currently in development. 
-
-## CollectionBuilder + Oral History as Data Based
-
-This site combines and updates code from [CollectionBuilder](https://collectionbuilder.github.io/), particularly the [Sheets](https://collectionbuilder.github.io/sheets/) version, and [Oral History as Data](https://uidaholib.github.io/oral-history-as-data/) to create it effects. See those projects for more information. 
+This repository uses connected Google Sheets and a Jekyll-based static web generator to publish an annotated, revised version of Shakespeare's Measure for Measure, revised by Kate Powers . It is currently in development. 
 
 ## License
 

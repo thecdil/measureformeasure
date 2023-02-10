@@ -75,12 +75,12 @@ function makeLine(obj) {
     
   // add playerline andannotation  if it exists
   if(annotation) {
-    line += '<div class="col-10 col-md-6 col-print-10 pr-0 playerline annobutton annotated" data-filter="'+ annoId + '">' + playerline + '</div>';
-    line += '<div class="d-none d-md-block col-12 col-md-5 small anno-container"><div class="annotation annobutton" id="'+ annoId + '" data-filter="' + annoId + '"><div class="content"><p>' + annotation + '</p></div></div></div>';
+    line += '<div class="col-10 col-md-6 col-print-10 pr-0 playerline annobutton annotated" onclick="toggleAnnotation(&apos;' + annoId +'&apos;);" data-filter="'+ annoId + '">' + playerline + '</div>';
+    line += '<div class="d-none d-md-block col-12 col-md-5 small anno-container"><div class="annotation annobutton" onclick="toggleAnnotation(&apos;' + annoId +'&apos;);" id="'+ annoId + '" data-filter="' + annoId + '"><div class="content"><p>' + annotation + '</p></div></div></div>';
     }
     else if (ibid){
-      line += '<div class="col-10 col-md-6 col-print-10 pr-0 playerline annobutton annotated '+ annoId + '" data-filter="'+ annoId + '">' + playerline + '</div>';
-    line += '<div class="d-none d-md-block col-12 col-md-5 small anno-container"><div class="annotation annobutton '+ annoId + '" data-filter="' + annoId + '"><div class="content"><p> </p></div></div></div>';
+      line += '<div class="col-10 col-md-6 col-print-10 pr-0 playerline annobutton annotated '+ annoId + '" onclick="toggleAnnotation(&apos;' + annoId +'&apos;);" data-filter="'+ annoId + '">' + playerline + '</div>';
+    line += '<div class="d-none d-md-block col-12 col-md-5 small anno-container"><div class="annotation annobutton '+ annoId + '" onclick="toggleAnnotation(&apos;' + annoId +'&apos;);" data-filter="' + annoId + '"><div class="content"><p> </p></div></div></div>';
     }
     else {
     line += '<div class="col-10 col-md-6 playerline col-print-10">' + playerline + '</div>';
